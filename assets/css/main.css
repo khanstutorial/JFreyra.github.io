@@ -6,6 +6,108 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+#pc:before{
+        background: url(../../images/pc-min.jpg);
+        content: "";
+        z-index: -1;
+        position: absolute;
+        opacity: 0.15;
+        top: 0; bottom: 0; left: 0; right: 0;
+        background-size: cover;
+}
+#bk:before{
+        background: url(../../images/bk-min.jpg);
+        content: "";
+        z-index: -1;
+        position: absolute;
+        opacity: 0.15;
+        top: 0; bottom: 0; left: 0; right: 0;
+        background-size: cover;
+}
+#sut:before{
+        background: url(../../images/sut-min.jpg);
+        content: "";
+        z-index: -1;
+        position: absolute;
+        opacity: 0.15;
+        top: 0; bottom: 0; left: 0; right: 0;
+        background-size: cover;
+}
+#jh:before{
+        background: url(../../images/jh-min.jpg);
+        content: "";
+        z-index: -1;
+        position: absolute;
+        opacity: 0.15;
+        top: 0; bottom: 0; left: 0; right: 0;
+        background-size: cover;
+}
+#ch:before{
+        background: url(../../images/ch-min.jpg);
+        content: "";
+        z-index: -1;
+        position: absolute;
+        opacity: 0.15;
+        top: 0; bottom: 0; left: 0; right: 0;
+        background-size: cover;
+}
+#rh:before{
+        background: url(../../images/rh-min.jpg);
+        content: "";
+        z-index: -1;
+        position: absolute;
+        opacity: 0.15;
+        top: 0; bottom: 0; left: 0; right: 0;
+        background-size: cover;
+}
+#fp:before{
+        background: url(../../images/fp-min.jpg);
+        content: "";
+        z-index: -1;
+        position: absolute;
+        opacity: 0.15;
+        top: 0; bottom: 0; left: 0; right: 0;
+        background-size: cover;
+}
+#ast:before{
+        background: url(../../images/ast-min.jpg);
+        content: "";
+        z-index: -1;
+        position: absolute;
+        opacity: 0.15;
+        top: 0; bottom: 0; left: 0; right: 0;
+        background-size: cover;
+}
+#op:before{
+        background: url(../../images/op-min.jpg);
+        content: "";
+        z-index: -1;
+        position: absolute;
+        opacity: 0.15;
+        top: 0; bottom: 0; left: 0; right: 0;
+        background-size: cover;
+}
+#ja:before{
+        background: url(../../images/ja-min.jpg);
+        content: "";
+        z-index: -1;
+        position: absolute;
+        opacity: 0.15;
+        top: 0; bottom: 0; left: 0; right: 0;
+        background-size: cover;
+}
+#dream:before{
+        background: url(../../images/dream-min.jpg);
+        content: "";
+        z-index: -1;
+        position: absolute;
+        opacity: 0.15;
+        top: 0; bottom: 0; left: 0; right: 0;
+        background-size: cover;
+}
+
+
+
 @font-face {
   font-family: d-din;
   src: url(../webfonts/D-DINCondensed-Bold.woff);
@@ -29,7 +131,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   font-family: d-din;
 }
 
