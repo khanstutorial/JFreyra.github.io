@@ -131,7 +131,7 @@
 }
 
 html {
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
   font-family: d-din;
 }
 
@@ -3884,7 +3884,7 @@ input, select, textarea {
 			font-size: 1em;
 			font-weight: bold;
 			letter-spacing: 0.25em;
-			line-height: 1.75;
+			line-height: 1.5;
 			outline: 0;
 			padding: 1.35em 0;
 			position: relative;
