@@ -2446,7 +2446,7 @@ input, select, textarea {
 				text-rendering: auto;
 				line-height: 1;
 				text-transform: none !important;
-				font-family: d-din;
+				font-family: "Font Awesome 5 Free";
 				font-weight: 900;
 			}
 
@@ -2526,7 +2526,7 @@ input, select, textarea {
 			text-rendering: auto;
 			line-height: 1;
 			text-transform: none !important;
-			font-family: "Font Awesome 5 Brands" !important;
+			font-family: "Font Awesome 5 Free" !important;
 			font-weight: 400;
 		}
 
@@ -3048,7 +3048,7 @@ input, select, textarea {
 			border-radius: 0;
 			display: block;
 			position: relative;
-			width: 25em;
+			width: 45em;
 		}
 
 			.spotlights > section > .image img {
