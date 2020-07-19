@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Countdown 'til the SHSAT'</title>
+	<link rel="shortcut icon" href="./images/fav.ico" type="image/x-icon">
+
+<style>
+
+body{
+	font-family: sans-serif;
+	text-align: center;
+	background: #1470AF;
+font-weight: 100;
+}
+h1{
+color: white;
+font-weight: 100;
+font-size: 40px;
+margin: 40px 0px 20px;
+}
+#clockdiv{
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+}
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+	border-width: medium;
+	border-color: #569fd1;
+	background: ##1470AF;
+	display: inline-block;
+}
+#clockdiv div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background: #79A4D1;
+	display: inline-block;
+}
+smalltext{
+	padding-top: 5px;
+	font-size: 16px;
+}
+</style>
+</head>
+<body>
+<h1>Time Until the SHSAT:</h1>
+<div id="clockdiv">
+<div>
+	<span class="weeks" id="weeks"></span>
+	<div class="smalltext">Weeks</div>
+</div>
+<div>
+	<span class="days" id="day"></span>
+	<div class="smalltext">Days</div>
+</div>
+<!--
+<div>
+	<span class="hours" id="hour"></span>
+	<div class="smalltext">Hours</div>
+</div>
+<div>
+	<span class="minutes" id="minute"></span>
+	<div class="smalltext">Minutes</div>
+</div>
+<div>
+	<span class="seconds" id="second"></span>
+	<div class="smalltext">Seconds</div>
+</div>
+-->
+</div>
+
+
+<h2 id="demo"></h2>
+
+<script>
+
+var deadline = new Date("nov 7, 2020 00:00:0").getTime();
+
+var x = setInterval(function() {
+
+var now = new Date().getTime();
+var t = deadline - now;
+var weeks = Math.floor(t / (1000 * 60 * 60 * 24 * 7 ));
+var days = Math.floor((t / (1000 * 60 * 60 * 24)));
+var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((t % (1000 * 60)) / 1000);
+days %= 8;
+document.getElementById("weeks").innerHTML =weeks;
+document.getElementById("day").innerHTML =days ;
+document.getElementById("hour").innerHTML =hours;
+document.getElementById("minute").innerHTML = minutes;
+document.getElementById("second").innerHTML =seconds;
+if (t < 0) {
+		clearInterval(x);
+		document.getElementById("demo").innerHTML = "ITS TEST WEEKEND!";
+		document.getElementById("weeks").innerHTML = '0';
+		document.getElementById("day").innerHTML ='0';
+		document.getElementById("hour").innerHTML ='0';
+		document.getElementById("minute").innerHTML ='0' ;
+		document.getElementById("second").innerHTML = '0';
+	}
+}, 1000);
+</script>
+</body>
+</html>
